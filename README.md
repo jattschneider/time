@@ -17,12 +17,12 @@ import (
 )
 
 func main() {
-	sw := &time.StopWatch{}
+    sw := &time.StopWatch{}
     fmt.Println(sw.Summary())
-	sw.Start("task 1")
+    sw.Start("task 1")
     time.Sleep(2 * time.Nanosecond)
-	sw.Stop()
-	fmt.Println(sw.String())
+    sw.Stop()
+    fmt.Println(sw.String())
 }
 
 ```
